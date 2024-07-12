@@ -11,7 +11,7 @@ def do_pack():
     return the archive path if archive has bbeenn correctly
     """
     local("mkdir -p versions")
-    date = datetime.now().strftime("%Y%m%d%H%m%S")
+    date = datetime.now().strftime("%Y%m%d%H%M%S")
     archived_path = "versions/web_stactic_{}.tgz".format(date)
     t_gzip_archive = local("tar -cvzf {} web_static".format(archived_path))
 
