@@ -13,7 +13,7 @@ def do_pack():
     local("mkdir -p versions")
     date = datetime.now().strftime("%Y%m%d%H%m%S")
     archived_path = "versions/web_stactic_{}.tgz".format(date)
-    t_gzip_archive == local("tar -cvzf {} web_static".format(archived_path))
+    t_gzip_archive = local("tar -cvzf {} web_static".format(archived_path))
 
     if t_gzip_archive.succeeded:
         return archived_path
