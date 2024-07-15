@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-fafric script that generates a /tgz from the contents of web_static
+This script generate .tgz archive from the contents of the web_static folder
 """
 from fabric.api import local
-import time
 import os
+import time
 
 
 def do_pack():
     """
-    return the archive path if archive has bbeenn correctly
+    This return the archive if it hase been correct
     """
     if not os.path.exists("versions"):
         os.makedirs("versions")
