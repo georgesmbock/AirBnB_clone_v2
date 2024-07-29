@@ -1,2 +1,2 @@
-#!/usr/bin/pythoon3
+#!/usr/bin/python3
 """ Enter pointe """
